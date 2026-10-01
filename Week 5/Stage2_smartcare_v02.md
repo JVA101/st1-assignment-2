@@ -1,23 +1,23 @@
 ## Stakeholders
 
-| Stakeholder  | Need                                                                    | Evidence                                                                                                                                                                            |
-|--------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Patient      | reliable service from the clinic                                        | The clinic seems to have a lot of issues managing patient appointments, like finding patient information and experiencing double bookings.                                          |
-| Practitioner | an overview of the appointment list                                     | "Management wants a small, maintainable patient, **practitioner** and appointment system." Practitioners should have an overview to the schedule to support appointment management. | 
-| Staff        | a system that allows them to easily process and manage appointments     | "Staff report duplicate bookings, difficulty finding patient information, inconsistent appointment status, and limited appointment history."                                        | 
-| Management   | a basic appointment system to support the daily functions of the clinic | "**Management** wants a small, maintainable patient, practitioner and appointment system."                                                                                          | 
+| Stakeholder  | Need                                                                    | Evidence                                                                                                                                     |
+|--------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Patient      | reliable service from the clinic                                        | The clinic seems to have a lot of issues managing patient appointments, like finding patient information and experiencing double bookings.   |
+| Practitioner | clearer visibility to their schedule                                    | "limited visibility of practitioner availability"                                                                                            | 
+| Staff        | a system that allows them to easily process and manage appointments     | "Staff report duplicate bookings, difficulty finding patient information, inconsistent appointment status, and limited appointment history." | 
+| Management   | a basic appointment system to support the daily functions of the clinic | "**Management** wants a small, maintainable patient, practitioner and appointment system."                                                   | 
 
 ___
 ## Functional Requirements
 
 FR-01: Creating an appointment requires all appointment details to be filled out.   
 FR-02: List of appointments should be sorted in chronological order.  
-FR-03: Practitioners should have their own personalised view of the list of appointments. (Maybe out of scope: UNVERIFIED)   
+FR-03: Registering a patient   
 FR-04: A confirmation is required before deleting an appointment.   
 FR-05: A confirmation is required before changing appointment details.  
 FR-06: Modifiable appointment details are limited to date, time, practitioner, and status.  
 FR-07: An error message should come up if an attempted double booking is made.   
-FR-08: Patient search requires first and last name.   
+FR-08: Patient search requires first and last name and DOB.  
 FR-09: Patient search displays patient's relevant information.
 
 ___
@@ -27,12 +27,12 @@ NFR-01: PEP 8 style guide should be used for easier readability.
 NFR-02: The system's interface should have an easy to approach design.   
 NFR-03: The system must process the deletion of an appointment within 3 seconds after user confirmation.   
 NFR-04: The system must process the modification of an appointment within 3 second after user confirmation.  
-NFR-05: Authentication should happen before a user is allowed access into the system.   
+NFR-05: Authentication should happen before a user is allowed access into the system.
 
 ___
 ## User Stories
 
-US-01: As a practitioner, I want a view of my appointments in chronological order, so that I knw my daily schedule and upcoming patients.  
+US-01: As a receptionist, I want to be able to register a new patient joining that is joining the clinic.  
 US-02: As a receptionist, I want to be able to change or delete an appointment, so that I can handle unexpected changes and keep the schedule up to date.  
 US-03: As a receptionist, I want to be able to update the appointment status to 'Arrived' when a patient check in, so that the schedule is kept up to date and practitioners know when their patients are waiting in the lobby.  
 US-04: As a receptionist, I want to be able to find patient information easily, so that I don't have difficulty looking for it and I can process things much faster.  
@@ -40,9 +40,9 @@ US-04: As a receptionist, I want to be able to find patient information easily, 
 ___
 ## Acceptance Criteria  
 
-GIVEN a practitioner is logged into the system,  
-WHEN the practitioner navigates to their schedule,  
-THEN the system should display a list of all their appointments in chronological order.  
+GIVEN a receptionist is logged into the system,  
+WHEN the receptionist navigates to register patient,  
+THEN the system should get the relevant information of the new patient and store it into the clinic patient database record.  
 
 GIVEN a receptionist is using the system and wants to change Patient A's appointment time to 3pm on monday,  
 WHEN the receptionist changes the appointment, but Patient B already has an appointment booked for that time slot,  
