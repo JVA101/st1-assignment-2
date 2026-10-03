@@ -13,7 +13,7 @@ WEEKEND_SLOTS = []
 
 def main():
     # initialise system
-    # makes the commands
+    # makes commands
     pass
 
 

@@ -37,13 +37,13 @@ ___
 
 **Appointment**    
 
-| Responsibilities                          | Collaborators           |
-|-------------------------------------------|-------------------------|
-| Creates booking                           | practitioner, database  |
-| Chronologically sorts appointments & list | database                |
-| Deletion of appointment                   | database                |
-| Modification of appointment               | practitioner, database  |
-| Archives appointment                      | database                |  
+| Responsibilities                          | Collaborators                   |
+|-------------------------------------------|---------------------------------|
+| Creates booking                           | patient, practitioner, database |
+| Chronologically sorts appointments & list | database                        |
+| Deletion of appointment                   | database                        |
+| Modification of appointment               | patient, practitioner, database |
+| Archives appointment                      | database                        |  
 
 ___
 ## Relationship Reasoning  

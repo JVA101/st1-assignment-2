@@ -43,7 +43,7 @@ class PatientManager:
         self.db = db
 
 
-    def register_patient (self,patient_id:int, f_name:str, l_name:str, m_name:str, DOB:int, sex:str, contact:ContactDetails,
+    def register_patient (self, patient_id:int, f_name:str, l_name:str, m_name:str, DOB:int, sex:str, contact:ContactDetails,
                  address:ResidentialAddress, is_archived:bool=False):
         # creates a new patient profile
         pass

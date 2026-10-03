@@ -16,14 +16,14 @@ class AppointmentStatus(Enum):
 class Appointment:
     # structure of Smart Care appointment class
 
-    def __init__(self, _appointment_id:int, _date_time:int, _patient_id:int, _practitioner_id:int, _status:AppointmentStatus.ACTIVE,
+    def __init__(self, appointment_id:int, date_time:int, patient_id:int, practitioner_id:int, status: AppointmentStatus,
                  _is_archived:bool=False):
 
-        self._appointment_id = _appointment_id
-        self._date_time = _date_time
-        self._patient_id = _patient_id
-        self._practitioner_id = _practitioner_id
-        self._status = _status
+        self._appointment_id = appointment_id
+        self._date_time = date_time
+        self._patient_id = patient_id
+        self._practitioner_id = practitioner_id
+        self._status = status
         self._is_archived = _is_archived
 
 
